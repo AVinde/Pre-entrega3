@@ -1,340 +1,55 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.navbar__head {
+  width: auto;
+  background-color: rgb(223, 226, 228);
+  z-index: 30;
+}
+.navbar__head__container {
+  width: auto;
+  height: 100%;
+  justify-content: center;
+  padding: 30px;
+}
+.navbar__head__container__img-logo {
+  width: 250px;
+  height: 124px;
+  padding-bottom: 10px;
+  align-items: c;
 }
 
-/*---Header---*/
-.img-logo{
-    width: 250px;
-    height: 124px;
-    padding-bottom: 10px;
+carousel-slide-row {
+  padding: 50px;
 }
 
-
-a.navbar-brand {
-    width: 250px;
-    height: 124px;
+img.d-block.w-100 {
+  align-items: center;
+  padding: 50px;
 }
 
-li.nav-item.dropdown{
-    list-style: none;
+main {
+  background-color: #ED6A3B;
+  width: 100%;
+  height: 100%;
+  min-width: 375px;
 }
 
-
-header.navbar.navbar-expand-lg{
-    background-color:#f3f3f3;
+section.marcas-sponsor {
+  max-width: 100%;
+  height: 300px;
+  background-color: #f3f3f3;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  grid-auto-rows: minmax(12px, auto);
+  padding: 2% 5%;
+  padding-left: 150px;
+  padding-right: 90px;
+  justify-content: center;
 }
 
-a.nav-link{
-    font-size: 1,90em;
-    padding: 0.5em;
-    margin: auto;
-    font-family: 'Montserrat', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-a.nav-link:hover{
-    background-color: #ED6A3B;
-    border-radius: 0.33em;
-
-}
-
-
-/*---boton busqueda---*/
-.btn.btn-outline-success.justify-content-end {
-    color: black;
-    border-color: #ED6A3B;
-
-}
-
-.btn.btn-outline-success.justify-content-end:hover{
-    color: black;
-    background-color: #ED6A3B;
-}
-
-/*--- Barra de busqueda---*/
-
-
-input{
-    margin: 5px;
-    padding: 10px;
-}
-
-/*---main---*/
-
-main{
-    background-color:#ED6A3B;
-    width: auto;
-    height: auto;
-    min-width: 375px;
-}
-
-
-
-/*---carousel---*/
-
-div.carousel-indicators{
-    justify-content: center;
-}
-
-/*---Marcas ---*/
-
-.marcas-sponsor{
-display: grid;
-padding: 18px;
-background-color: #e5e5e5;
-justify-items: center;
-align-content: space-evenly;
-max-width: 100vw;
-height: auto;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(2, 1fr);
-}
-
-/*--- Contenido Main ---*/
-
-.img-oferta{
-    width: 100%;
-    padding-top: 20px;
-    background-size: cover;
-
-}
-
-div.row{
-    justify-content: center;
-}
-
-
-.img-componente{
-    margin: 29px;
-    padding: 10px;
-    
-}
-
-
-div.componetes.row{
-    width: auto;
-    height: auto;
-    margin: 20px;
-    padding: 50px;
-}
-
-
-.componentes.col{
-    margin: 15px;
-    width: auto;
-    height: auto;
-    padding: 20px;
-}
-
-
-/*--- Procesadores---*/
-
-main.d{
-    text-align: center;
-    justify-self: center;
-    
-}
-
-h2.procesador{
-    text-align: center;
-}
-
-/*--- Contacto ---*/
-
-.main-contact{
-    height: 100%;
-    width: 100%;
-    font-family: 'Noto Sans', sans-serif;
-    background-color: #ED6A3B; 
-    display: inline
-  }
-  
-  
-  .contact_form{  
-    width: 460px; 
-    height: auto;
-    margin: 80px auto;
-    border-radius: 10px;  
-    padding-top: 30px;
-    padding-bottom: 20px;  
-    background-color: #fbfbfb; 
-    padding-left: 30px; 
-  }
-  
-  
-  .input-contact{
-    background-color: #fbfbfb; 
-    width: 408px; 
-    height: 40px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color:#ED6A3B; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-  }
-  
-  
-  textarea{
-    background-color: #fbfbfb; 
-    width: 405px; 
-    height: 150px; 
-    border-radius: 5px;  
-    border-style: solid; 
-    border-width: 1px; 
-    border-color: #ED6A3B; 
-    margin-top: 10px;  
-    padding-left: 10px;
-    margin-bottom: 20px; 
-    padding-top: 15px; 
-  }
-  
-  
-  label{
-    display: block; 
-    float: center;  
-  }
-  
-  
-  .button-contact{
-    height: 45px; 
-    padding-left: 5px;
-    padding-right: 5px;   
-    margin-bottom: 20px; 
-    margin-top: 10px;   
-    text-transform: uppercase;
-    background-color: #ED6A3B; 
-    border-color: #ED6A3B; 
-    border-style: solid; 
-    border-radius: 10px;  
-    width: 420px;   
-    cursor: pointer;
-  }
-  
-  
-  button p{
-    color: #fff;
-  }
-
-
-  button p:hover {
-    color: #fff;
-  }
-  
-  span{
-    color: #ED6A3B; 
-  }
-  
-  
-  .aviso{
-    font-size: 13px;  
-    color: #0e0e0e;  
-  }
-  
-  
- .h1-contact{
-    font-size: 39px;  
-    text-align: letf; 
-    padding-bottom: 20px; 
-    color: #ED6A3B;
-  }
-  
-  
-  .h3-contact{
-    font-size: 16px; 
-    padding-bottom: 30px;
-    color: #0e0e0e;   
-  }
-  
-  
-  p{
-    font-size: 14px; 
-    color: #0e0e0e; 
-  }
-  
-  
-  ::-webkit-input-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  ::-webkit-textarea-placeholder {
-   color: #a8a8a8;
-  }
-  
-  
-  .formulario input:focus{
-    outline:0;
-    border: 1px solid #0000006c;
-  }
-  
-  
-  .formulario textarea:focus{
-    outline:0;
-    border: 1px solid #0000006c;
-  }
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-/*--- Ayuda-soporte---*/
-
-.titu-ayuda{
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-    font-style: oblique;
-    background-color:white
-}
-
-.pregunta-uno{ 
-    margin: auto;
-    padding: 15px;
-    text-align: center;
-    background-color: #fbeed3;
-}
-
-.ayuda-dos{
-    margin:auto;
-    padding:15px;
-    text-align: center;
-    background-color: #fbeed3;
-
-}
-
-
-.pregunta-tres.container{
-    margin: auto;
-    padding: 15px;
-    text-align: center;
-    background-color: #fbeed3;
-
-}
-
-
-
-
-
-/*--- Footer---*/
-
-.bg-footer{
-    background-color: #fbeed3;
-
-}
-
-
-div.d-flex{
-    align-items: center;
-}
-
-h2.h2-footer{
-    text-align: center;
-}
-
-
-.seccionesfooter{
-    list-style: none;
-}
+/*# sourceMappingURL=style.css.map */
