@@ -16,44 +16,24 @@
     <link rel="stylesheet" href="main.scss">
 </head>
 <body>
-    <header class="navbar__head">
-        <div class="navbar__container">
-          <a class="navbar__img" href="./index.html"><img src="" alt="" class="img-logo"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <nav class="collapse navbar-collapse justify-content-start" id="navbarNavDropdown">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="./pages/componentes.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Componentes
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./pages/procesadores.html">Procesadores</a></li>
-                  <li><a class="dropdown-item" href="./pages/Placas de video.html">Placas de video</a></li>
-                  <li><a class="dropdown-item" href="./pages/gabinetes.html">Gabinetes</a></li>
-                </ul>
-              </li>
-             <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/atpc.html">Arma tu PC</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./pages/ofertas.html">Ofertas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./pages/contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="../pages/ayuda.html">Ayuda</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-outline-success justify-content-end" type="submit"><i class="fa-solid fa-magnifying-glass "></i></button>
-              </form>
-        </nav>
-        </div>
-    </header>
+  <!-----------------------         NAVBAR           ---------------------------->
+  <header class="header">
+    <div class="logo">
+        <img src="./img/logo-tecnoshop.png" alt="Logo de la marca">
+    </div>
+    <nav>
+       <ul class="nav-links">
+            <li><a href="./pages/atpc.html">Arma tu PC</a></li>
+            <li><a href="./pages/ofertas.html">Ofertas</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./pages/ayuda.html">Ayuda</a></li>
+       </ul>            
+    </nav>
+    <a class="btn" href="#"><button>Buscar</button></a>
+</header>
+
+  <!-----------------------         CARRUSEL         ---------------------------->
+
     <main class="main__container">
         <section class="container">
           <div id="carouselExampleIndicators" class="carousel slide row" data-bs-ride="true">
@@ -62,15 +42,15 @@
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner -sm">
+            <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./img/nvidia.png" class="d-block w-100" alt="Nvidia">
-              </div>
-              <div class="carousel-item -sm">
-                <img src="./img/amd-intel.png" class="d-block w-100" alt="Intel">
+              <img src="./img/nvidia.png" class="d-block w-100" alt="Nvidia"> 
+              </div> 
+              <div class="carousel-item">
+                <img src="./img/amd-intel.png" class="d-block w-100" alt="Intel"> 
               </div>
               <div class="carousel-item">
-                <img src="./img/amd-pdv.png" class="d-block w-100" alt="Amd">
+                <img src="./img/amd-pdv.png" class="d-block w-100" alt="Amd"> 
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -83,6 +63,9 @@
             </button>
           </div>
         </section>
+
+         <!-----------------------         SPONSORS         ---------------------------->
+
         <section class="marcas-sponsor">
            <div>
             <a href="https://www.amd.com/es" target="_blank">
@@ -128,7 +111,7 @@
 
         </section>
     </main>
-
+             <!-----------------------         FOOTER        ---------------------------->
     <footer class="bg-footer">
 
         <div class="conteiner">
