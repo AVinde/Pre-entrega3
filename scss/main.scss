@@ -1,7 +1,11 @@
+@import "./base/base";
+
 @import "utils/variables";
 
 
 @import "./components/navbar";
+@import "./components/botones";
+@import"./components/carrusel";
 
-@import "./base/base";
-
+@import "./pages/componentes";
+@import "./pages/index"
