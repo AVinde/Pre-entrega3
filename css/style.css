@@ -5,8 +5,8 @@
 }
 
 body {
-  padding: 0;
-  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 body {
@@ -79,6 +79,12 @@ body {
   transform: scale(1.1);
 }
 
+nav li ul a {
+  display: inline-block;
+  padding: 10px;
+  margin: 15px;
+}
+
 .btn.btn-outline-success.justify-content-end {
   color: black;
   border-color: #ED6A3B;
@@ -87,6 +93,43 @@ body {
 .btn.btn-outline-success.justify-content-end:hover {
   color: black;
   background-color: #ED6A3B;
+}
+
+.container__carrusel {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  max-height: 1000px;
+}
+
+.carousel-item active .carousel-item-start {
+  display: inline-flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 2px;
+}
+
+.carousel-indicators {
+  display: inline-flex;
+  justify-content: center;
+  margin: 10px;
+  padding: 2px;
+}
+
+.bg-footer {
+  background-color: #fbeed3;
+}
+
+div.d-flex {
+  align-items: center;
+}
+
+h2.h2-footer {
+  text-align: center;
+}
+
+.seccionesfooter {
+  list-style: none;
 }
 
 .img-logo {
@@ -113,6 +156,13 @@ section.marcas-sponsor {
   padding-left: 150px;
   padding-right: 90px;
   justify-content: center;
+}
+
+.logomarca {
+  display: block;
+  justify-content: center;
+  margin: 1px;
+  padding: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

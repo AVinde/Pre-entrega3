@@ -5,6 +5,7 @@ body{
     display: inline-block;
 }
 
+
 .header{
     background-color: #9e3838;
     display: flex;
@@ -66,4 +67,13 @@ body{
     background-color: #e2f1f8;
     color: #ED6A3B;
     transform: scale(1.1);
+}
+
+
+
+nav li ul a {
+
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
 }
