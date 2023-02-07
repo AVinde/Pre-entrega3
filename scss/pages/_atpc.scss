@@ -1,0 +1,30 @@
+div .card-body{
+
+    padding: 0;
+    background-color: none;
+
+}
+
+@media screen and (max-width: 720px) {
+
+    div .card-body{
+
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 10% 10% 10% 10%;
+        grid-template-rows: 0.5fr 0.5fr;
+        margin:0px;
+        
+
+    
+    
+    }
+    .card{
+
+        min-width: 200px;
+        max-height: 300px;
+        background-color: transparent;
+    }
+
+
+}

@@ -1,26 +1,190 @@
 html{
     max-width: 100vw;
+    
 }
 
-
-
-
-
-
-section.marcas-sponsor{
-    max-width: 100%;
-    height: 300px;
-    background-color: #f3f3f3;
+/**********************            SPONSORS            ************************/
+.sponsorsMain {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap:  20px;
-    grid-auto-rows: minmax(12px, auto);
-    padding: 2% 5%;
-    padding-left: 150px;
-    padding-right: 90px;
-    justify-content: center;
-    
+    grid-template-columns: repeat(9, 1fr);
+    background-color: #e5e5e5;
+    height: 15vh;
+    justify-items: center;
+    align-content: space-evenly; }
+  
+  .sliderSponsors {
+    height: 140px; }
+    .sliderSponsors:hover {
+      transform: scale(1.2);
+      transition: 0.2s; }
 
 
-    
-}
+/**********************            PRODUCTOS RECOMENDADOS            ************************/
+
+      .productosRecomendados {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 10% 10% 10% 10%;
+        grid-template-rows: 0.5fr 0.5fr;
+        gap: 20px 20px;
+        margin: 20px 0px;
+        grid-auto-flow: row;
+        grid-template-areas: "prodRecomBanner prodRecom1 prodRecom1 prodRecom2 prodRecom2"
+       "prodRecomBanner prodRecom3 prodRecom3 prodRecom4 prodRecom4"; }
+      
+      .prod__recom__titulo {
+        font-size: 40px;
+        font-weight: 700;
+        padding: 30px;
+        margin: 30px;
+        border-radius: 2px;
+        background-color: #1d1b1b;
+        color: #f3f3f3;
+        text-align: center; }
+      
+      .prodRecomBanner {
+        grid-area: prodRecomBanner;
+        overflow: hidden; }
+      
+      .prodRecomBanner img {
+        width: 750px; }
+      
+      .prodRecom1 {
+        grid-area: prodRecom1;
+        background-color: #ebebeb; }
+      
+      .prodRecom2 {
+        grid-area: prodRecom2;
+        background-color: #ebebeb; }
+      
+      .prodRecom3 {
+        grid-area: prodRecom3;
+        background-color: #ebebeb; }
+      
+      .prodRecomBoxShadow:hover {
+        transform: scale(1.01);
+        transition: 0.2s;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
+      
+
+
+
+
+/**********************            MEDIA QUERYS (1024px)           ************************/
+
+
+
+ @media screen and (max-width: 1174px){
+
+    .sliderSponsors {
+        height: 90px; }
+ }
+
+ .productosRecomendados {
+    justify-items: center;
+    grid-template-columns: 0.2fr 0.2fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 20px;
+    grid-template-areas: "prodRecomBanner prodRecomBanner"
+ "prodRecom1 prodRecom2"
+ "prodRecom3 prodRecom4"; }
+
+
+
+
+
+/**********************            MEDIA QUERYS (992px)           ************************/
+
+
+
+@media screen and (max-width: 992px) {
+      .sponsorsMain {
+        height: 8vh; }
+      .sliderSponsors {
+        height: 60px; }
+
+        .productosRecomendados {
+            justify-items: center;
+            grid-template-columns: 0.2fr 0.2fr;
+            grid-template-rows: 1fr;
+            padding-bottom: 20px;
+            grid-template-areas: "prodRecomBanner prodRecomBanner"
+         "prodRecom1 prodRecom2"
+         "prodRecom3 prodRecom4"; }
+
+      }
+
+
+
+
+/**********************            MEDIA QUERYS (720px)           ************************/
+
+
+ @media screen and (max-width: 790px) {
+    .sponsorsMain {
+        max-width: 100vw;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); }
+      .sliderSponsors {
+        height: 80px; }
+      .sliderSponsors:hover {
+        transform: scale(1); }
+
+        .productosRecomendados {
+            justify-items: center;
+            grid-template-columns: 0.2fr 0.2fr;
+            grid-template-rows: 1fr;
+            padding-bottom: 20px;
+            grid-template-areas: "prodRecomBanner prodRecomBanner"
+         "prodRecom1 prodRecom2"
+         "prodRecom3 prodRecom4"; }
+
+      
+          .prodRecomBoxShadow:hover {
+            transform: scale(1);
+            transition: 0s;
+            box-shadow: 0px 0px 0px; }
+          .prodRecomBanner {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr; }
+        }
+
+        /**********************            MEDIA QUERYS (360px)           ************************/
+
+
+        @media screen and (max-width: 360px){
+
+            .productosRecomendados img {
+                width: 240px; }
+
+            .prod__recom__titulo{
+              border-radius: 3px;
+                margin: 10px;
+                padding: 5px;
+            }
+
+            .prod__recom_titulo-text{
+
+                font-size: 30px;
+            }
+           
+            .productosRecomendados {
+                justify-items: center;
+                grid-template-columns: 0.4fr 0.4fr;
+                grid-template-rows: 1fr;
+                padding-bottom: 10px;
+                grid-template-areas: "prodRecomBanner prodRecomBanner"
+             "prodRecom1 prodRecom2"
+             "prodRecom3 prodRecom4"; }
+              .prodRecomBoxShadow:hover {
+                transform: scale(1);
+                transition: 0s;
+                box-shadow: 0px 0px 0px; }
+              .prodRecomBanner {
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr; }
+        }

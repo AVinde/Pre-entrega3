@@ -1,0 +1,53 @@
+/*.card__comp{
+    
+    display: inline-block;
+    margin:200px;
+    max-width: 1540px;
+}
+
+
+h2.titulo__secciones {
+    text-align: center;
+    border-radius: 3px;
+    padding: 15px;
+}
+
+.card__img{
+
+    
+}
+
+h3.titulo__secciones__amd{
+
+    display: flex;
+    margin: 20px;
+    padding: 19px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgb(212, 23, 23);
+}
+
+h3.titulo__secciones__intel{
+
+    display: flex;
+    margin: 20px;
+    padding: 19px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgb(70, 164, 201);
+}
+
+
+h3.titulo__secciones__nvidia{
+
+    display: flex;
+    margin: 20px;
+    padding: 19px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: rgb(70, 201, 129);
+    
+}
+
+/**********************            MEDIA QUERYS (720px)           ************************/
+

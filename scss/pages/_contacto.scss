@@ -1,0 +1,152 @@
+.contacto__fondo{
+
+    background-color: beige;
+    margin: 10px;
+    padding:auto;
+    border-radius: 8px;
+
+}
+
+
+
+.contenedor-footer-contacto {
+    position: absolute;
+    width: 100%;
+}
+
+.titulo__secciones {
+
+    background-color: #1d1b1b;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 40px;
+    height: auto;
+    width: auto;
+    text-align: c;
+
+}
+
+.btn{
+
+    color: #ED6A3B;
+    background-color: #f3f3f3;
+    border-color: #ED6A3B;
+
+}
+
+.btn:hover {
+    color: #f3f3f3;
+    background-color: #ED6A3B;
+    border: #1d1b1b;
+}
+
+
+.form-color{
+
+    color: #ED6A3B ;
+    border-style: #ED6A3B;
+}
+
+.contacto__mapa{
+
+    outline:2px #1d1b1b;
+    margin: 5em auto;
+    width: 300px;
+    height: 300px;
+
+}
+
+
+
+
+/**********************            MEDIA QUERYS (1024px)           ************************/
+
+
+
+@media screen and (max-width: 1024px){
+
+
+    .contacto__fondo{
+
+        background-color: beige;
+        margin: 4px;
+        padding:auto;
+        border-radius: 8px;
+    
+    }
+
+
+
+
+    
+}
+
+ 
+
+
+
+
+
+/**********************            MEDIA QUERYS (992px)           ************************/
+
+
+
+@media screen and (max-width: 992px) {
+
+    .contacto__fondo{
+
+        background-color: beige;
+        margin: 1px;
+        padding:auto;
+        border-radius: 8px;
+    
+    }
+
+
+      }
+
+
+
+
+/**********************            MEDIA QUERYS (720px)           ************************/
+
+
+ @media screen and (max-width: 790px) {
+
+
+
+
+    .contacto__fondo{
+
+        background-color: beige;
+        margin: 1px;
+        height: 660px;
+        padding:auto;
+        border-radius: 8px;
+    
+    }
+    
+    
+    .contacto__form{
+
+        width: 300px;
+        
+    }
+   
+        }
+
+/**********************            MEDIA QUERYS (360px)           ************************/
+
+
+        @media screen and (max-width: 360px){
+
+            .contacto__fondo{
+
+                background-color: beige;
+                border-radius: 8px;
+
+               
+            
+            }
+
+        }
