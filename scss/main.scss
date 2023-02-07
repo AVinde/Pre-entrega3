@@ -1,6 +1,6 @@
 @import "./base/base";
 
-@import "utils/variables";
+@import "./utils/variables";
 
 
 @import "./components/navbar";
@@ -9,4 +9,8 @@
 @import"./components/footer";
 
 @import "./pages/componentes";
-@import "./pages/index"
+@import "./pages/index";
+@import "./pages/contacto";
+@import "./pages/procesadores";
+@import "./pages/pdv";
+@import "./pages/atpc"

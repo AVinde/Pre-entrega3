@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-----------------------         FUENTE DE LETRA           ---------------------------->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-----------------------         ENLANCE CON ICONOS DE BOOTSRAP          ---------------------------->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  <!-----------------------         ENLACE CON BOOTSTRAP         ---------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-----------------------         ENLACE CON CSS           ---------------------------->
+  <link rel="stylesheet" href="../css/style.css">
+  <!-----------------------         ENLANCE CON ICONOS DE FONTAWESOME          ---------------------------->
+  <script src="https://kit.fontawesome.com/a62acd7bc4.js" crossorigin="anonymous"></script>
+  <!-----------------------         TITLE y META DESCRIPTION          ---------------------------->
+  <meta name="description" content=" Arma la computadora de tus sueños. Selecciona tu Placa de video y dale el maximo poder a tu PC 
+  SUCURSAL: Santa Fe 2200. Rosario. Santa Fe. Argentina    ">
+  <title>TecnoShop | Arma tu PC </title>
+  <!-----------------------         ENLANCE CON SASS          ---------------------------->
+  <link rel="stylesheet" href="../scss/main.scss">
+</head>
+
+<body>
+  <!-----------------------         NAVBAR           ---------------------------->
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"> <a href="../index.html" target="_blank"> <img class="logo__img" src="/img/logo-tecnoshop.png"
+          alt="Logo TecnoShop"></a></div>
+    <ul class="links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li class="nav-item nav-item-dropdown">
+        <a class="dropdown-trigger" href="#">Componentes</a>
+        <ul class="dropdown-menu">
+            <li class="dropdown-menu-item">
+                <a href="ofertas.html">Ofertas</a>
+              </li>
+          <li class="dropdown-menu-item">
+            <a href="pdv.html">Placas de video</a>
+          </li>
+          <li class="dropdown-menu-item">
+            <a href="gabinetes.html">Gabinetes</a>
+          </li>
+          <li class="dropdown-menu-item d-flex justify-content-center">
+            <a href="procesadores.html">Procesadores</a>
+          </li>
+        </ul>
+      <li><a href="atpc1.html">Arma tu PC</a></li>
+      <li><a href="./contacto.html">Contacto</a></li>
+      <li><a href="ayuda.html">Ayuda</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+  <h1>TecnoShop</h1>
+
+  <!----------------------------           SELECCION DE MARCA               ---------------------------->
+  <main class="d-flex justify-content-center align-items-center w-100 vh-100">
+    <div class="row row-col-2 justify-content-center row-cols-md-3 g-5 w-75">
+
+      <div class="col ">
+        <div class="card">
+          <a href="nvidia.html"><img src="../img/nvidia-logo.jpg" class="card-img-top" alt="Elegir placas de video de la marca Nvidia"></a>
+          <div class="card-body">
+
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <a href="amdpv.html"><img src="../img/amd-logo.png" class="card-img-top" alt="Elegir placas de video de la marca AMD"></a>
+          <div class="card-body">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-----------------------         FOOTER        ---------------------------->
+  <footer class="bg-footer">
+
+    <div class="conteiner">
+      <div class="d-flex justify-content-center">
+        <section class="secciones">
+          <ul class="ul-footer">
+            <p>
+            <h3 class="d-flex justify-content-center ">Secciones</h3>
+            </p>
+            <li class="secciones__footer">
+              <h4><a class="secciones__redi" href="../index.html">Inicio</a></h4>
+              <h4><a class="secciones__redi" href="../pages/componentes.html">Componentes</a></h4>
+              <h4><a class="secciones__redi" href="../pages/atpc1.html">Arma tu PC</a></h4>
+              <h4><a class="secciones__redi" href="../pages/ofertas.html">Ofertas</a></h4>
+              <h4><a class="secciones__redi" href="../pages/contacto.html">Contacto</a></h4>
+              <h4><a class="secciones__redi" href="../pages/ayuda.html">Ayuda</a></h4>
+            </li>
+          </ul>
+
+        </section>
+
+      </div>
+      <div class="row">
+        <div class="d-flex flex-column gap-3">
+          <img src="../img/logo-tecnoshop.png" alt="Logo TecnoShop" class="img__footer">
+
+          <span> TecnoShop © 2022, Todos los derechos reservados</span>
+
+          <span>tecnoshop@gmail.com</span>
+
+        </div>
+        <div>
+          <h3 class="h3-footer">Redes Sociales</h3>
+          <div class="d-flex justify-content-center gap-5 fs-1">
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+            <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+</body>
+
+</html>

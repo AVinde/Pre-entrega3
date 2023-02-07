@@ -1,7 +1,339 @@
-.img-logo{
-    border: 1em;
-    max-height: 94px;
-    max-width: 250px;
-    margin: 1em;
-    padding: 10px;
+
+/**********************            PRODUCTOS RECOMENDADOS            ************************/
+.productosRecomendados_compo {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 20% 10% 10% 10% 10%;
+    grid-template-rows: 0.5fr 0.5fr;
+    gap: 20px 20px;
+    margin: 150px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "prodRecomBanner prodRecom1 prodRecom1 prodRecom2 prodRecom2"
+   "prodRecomBanner prodRecom3 prodRecom3 prodRecom4 prodRecom4"; }
+  
+  .prod__recom__titulo {
+    font-size: 40px;
+    font-weight: 700;
+    padding: 30px;
+    margin: 30px;
+    border-radius: 2px;
+    background-color: #1d1b1b;
+    color: #f3f3f3;
+    text-align: center; }
+  
+  .prodRecomBanner {
+    grid-area: prodRecomBanner;
+    overflow: hidden; }
+  
+  .prodRecomBanner img {
+    width: 750px; }
+  
+  .prodRecom1 {
+    grid-area: prodRecom1;
+    background-color: #ebebeb; }
+  
+  .prodRecom2 {
+    grid-area: prodRecom2;
+    background-color: #ebebeb; }
+  
+  .prodRecom3 {
+    grid-area: prodRecom3;
+    background-color: #ebebeb; }
+  
+  .prodRecomBoxShadow:hover {
+    transform: scale(1.01);
+    transition: 0.2s;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3); }
+
+
+
+/**********************            TITULOS DE SECCIONES            ************************/
+  
+  h2.titulo__secciones {
+      display: block;
+      text-align: center;
+      border-radius: 8px;
+      padding: 10px;
+      border: 20px;
+      padding: 30px;
+      width: auto;
+      background-color: cadetblue;
+  }
+  
+ 
+  h3.titulo__secciones__amd{
+  
+      display: flex;
+      margin: 20px;
+      padding: 19px;
+      border-radius: 10px;
+      justify-content: center;
+      background-color: rgb(212, 23, 23);
+  }
+  
+  h3.titulo__secciones__intel{
+  
+      display: flex;
+      margin: 20px;
+      padding: 19px;
+      border-radius: 10px;
+      justify-content: center;
+      background-color: rgb(70, 164, 201);
+  }
+  
+  
+  h3.titulo__secciones__nvidia{
+  
+      display: flex;
+      margin: 20px;
+      padding: 19px;
+      border-radius: 10px;
+      justify-content: center;
+      background-color: rgb(70, 201, 129);
+  
+  }
+
+.titulo__secciones__ofertas{
+  
+    display: flex;
+    margin: 20px;
+    padding: 19px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #fbeed3;
+
 }
+
+.titulo__secciones__gabinete{
+  display: flex;
+  color: #f3f3f3;
+    margin: 20px;
+    padding: 19px;
+    border-radius: 10px;
+    justify-content: center;
+    background-color: #3a2475;
+}
+
+
+
+
+
+
+
+
+
+
+/**********************            PRECIOS            ************************/
+
+.precio{
+
+  font-size: 39px;
+  font-weight: 500;
+  color: black;
+
+
+
+}
+
+.precio__descuento{
+
+  text-decoration: line-through;
+  font-size: 23px;
+  color: #1d1b1b81;
+}
+
+
+
+/**********************            MEDIA QUERYS (1024px)           ************************/
+
+
+
+@media screen and (max-width: 1174px){
+
+.sliderSponsors {
+    height: 90px; }
+}
+
+.productosRecomendados_compo {
+justify-items: center;
+grid-template-columns: 0.2fr 0.2fr;
+grid-template-rows: 1fr;
+margin: 150px;
+padding: 2px;
+grid-template-areas: "prodRecomBanner prodRecomBanner"
+"prodRecom1 prodRecom2"
+"prodRecom3 prodRecom4"; }
+
+
+
+
+
+/**********************            MEDIA QUERYS (992px)           ************************/
+
+
+
+@media screen and (max-width: 992px) {
+  .sponsorsMain {
+    height: 8vh; }
+  .sliderSponsors {
+    height: 60px; }
+
+    .productosRecomendados_compo {
+        justify-items: center;
+        grid-template-columns: 0.2fr 0.2fr;
+        grid-template-rows: 1fr;
+       margin: 150px 10px;
+        padding:1px;
+        grid-template-areas: "prodRecomBanner prodRecomBanner"
+     "prodRecom1 prodRecom2"
+     "prodRecom3 prodRecom4"; }
+
+  }
+
+
+
+
+/**********************            MEDIA QUERYS (720px)           ************************/
+
+
+@media screen and (max-width: 790px) {
+.sponsorsMain {
+    max-width: 100vw;
+    height: auto;
+    display: grid;
+    margin: 130px 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr); }
+  .sliderSponsors {
+    height: 80px; }
+  .sliderSponsors:hover {
+    transform: scale(1); }
+
+    .productosRecomendados_compo {
+        justify-items: center;
+        grid-template-columns: 0.2fr 0.2fr;
+        grid-template-rows: 1fr;
+        padding-bottom: 20px;
+        grid-template-areas: "prodRecomBanner prodRecomBanner"
+     "prodRecom1 prodRecom2"
+     "prodRecom3 prodRecom4"; }
+
+  
+      .prodRecomBoxShadow:hover {
+        transform: scale(1);
+        transition: 0s;
+        box-shadow: 0px 0px 0px; }
+      .prodRecomBanner {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr; }
+
+        .card__comp{
+      
+  
+          margin: 70px;
+          max-width: 1540px;
+      }
+     
+      .matcard{
+        display: inline-block;
+        margin-left:70px;
+        width: 400px;
+      }
+
+      .btn,.btn-success{
+
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+      }
+    }
+    @media screen and (max-width: 481px){
+
+      .btn-bottom-right {
+        position: absolute;
+        right: 0;
+        bottom: 20% !important;
+      }
+      
+      .btn-bottom-left {
+        position: absolute;
+        left: 0;
+        bottom: 20% !important;
+      }
+   
+    .matcard{
+      display: inline-block;
+      margin: auto;
+      width: 300px;
+    }
+
+    .btn,.btn-success{
+
+      display: block;
+      
+      width: 100px;
+      justify-content: center;
+      margin: 20px;
+    }
+
+
+      }
+    /**********************            MEDIA QUERYS (360px)           ************************/
+
+
+    @media screen and (max-width: 360px){
+
+        .productosRecomendados_compo img {
+            width: 240px; }
+
+        .prod__recom__titulo{
+          border-radius: 3px;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .prod__recom_titulo-text{
+
+            font-size: 30px;
+        }
+       
+        .productosRecomendados_compo {
+            justify-items: center;
+            grid-template-columns: 0.4fr 0.4fr;
+            grid-template-rows: 1fr;
+            padding-bottom: 10px;
+            grid-template-areas: "prodRecomBanner prodRecomBanner"
+         "prodRecom1 prodRecom2"
+         "prodRecom3 prodRecom4"; }
+          .prodRecomBoxShadow:hover {
+            transform: scale(1);
+            transition: 0s;
+            box-shadow: 0px 0px 0px; }
+          .prodRecomBanner {
+            display: grid;
+            grid-template-rows: 1fr;
+            grid-template-columns: 1fr; }
+
+
+            .card__comp{
+      
+  
+              margin: 70px;
+              max-width: 1540px;
+          }
+         
+          .matcard{
+            display: inline-block;
+            margin: auto;
+            width: 300px;
+          }
+    
+          .btn,.btn-success{
+    
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+          }
+        
+    }

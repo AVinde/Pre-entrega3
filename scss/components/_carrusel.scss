@@ -1,20 +1,85 @@
+
+/**********************           CARRUSEL            ************************/
+
 .container__carrusel{
 display: flex;
 justify-content: center;
-padding: 10px;
+padding: 1000px;
 max-height: 1000px;
 }
 
 .carousel-item active .carousel-item-start{
     display: inline-flex;
     justify-content: center;
-    margin: 10px;
-    padding: 2px;
+    margin: 30px;
+    padding: 100px;
 }
 
 .carousel-indicators{
-    display: inline-flex;
     justify-content: center;
-    margin: 10px;
+    margin: 40px;
     padding: 2px;
 }
+
+
+.d-block{
+
+    margin: 10px;
+    padding: 100px;
+}
+
+/**********************           MEDIA QUERYS           ************************/
+
+/**********************            MEDIA QUERY (992 PX)            ************************/
+
+@media screen and (max-width: 992px) {
+
+    .container__carrusel{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        max-height: 1050px;
+        min-width: 100px;
+        object-fit: contain;
+        }
+    
+
+}
+
+/**********************            MEDIA QUERY (720 PX)            ************************/
+
+
+@media screen and (max-width: 720px) {
+
+    .carousel__main{
+
+        padding: 1px;
+        margin: 1px;
+        
+    }
+
+    .container__carrusel{
+    display: block;
+    justify-content: center;
+    padding: 3000px;
+    max-height: 1000px;
+    }
+    
+    .carousel-item active .carousel-item-start{
+        display: inline-flex;
+        justify-content: center;
+        margin: 30px;
+        padding: 100px;
+    }
+    
+    .carousel-indicators{
+        justify-content: center;
+        margin: 40px;
+        padding: 2px;
+    }
+    
+
+
+}
+
+
